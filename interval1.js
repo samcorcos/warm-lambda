@@ -1,7 +1,7 @@
 let containerId
 
 module.exports.ping = (event, context, callback) => {
-  if (!containerId) containerId = awsRequestId
+  if (!containerId) containerId = context.awsRequestId
 
   console.log('*** CONTAINER ID *** ' + containerId)
 
