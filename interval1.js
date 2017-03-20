@@ -1,3 +1,5 @@
+'use strict'
+
 let containerId
 
 module.exports.ping = (event, context, callback) => {
